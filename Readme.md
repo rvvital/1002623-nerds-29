@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Ращеня Виталий](https://up.htmlacademy.ru/htmlcss/29/user/1002623).
+* Студент: [Ращеня Виталий :)](https://up.htmlacademy.ru/htmlcss/29/user/1002623).
 * Наставник: `[Семён :) Якушев](https://htmlacademy.ru/profile/id1118791)`.
 
 ---
