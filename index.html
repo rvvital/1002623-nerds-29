@@ -13,13 +13,13 @@
     <a class="main-header-logo" href="#">
       <img src="img/nerds-logo.png" width="159.87" height="65.02" alt="Логотип Нёрдс">
     </a>
-    <ul class="site-nav">
       <li><a href="studia.html">Студия</a></li>
       <li><a href="klients.html">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
     <a class="basket-link" href="basket.html">Корзина</a>
+   
   </nav>
 </header>
 
@@ -37,7 +37,7 @@
         <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Дизайн для мобильного сайта">
       </a>
     </figure>
-    <figure class="gallery-content">
+   <!-- <figure class="gallery-content">
       <p class="deviz">Любим математику<br>
         как никто другой</p>
       <p>Никакого креатива, только математические формулы<br>
@@ -56,7 +56,7 @@
       <a href="#">
         <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Дизайн для мобильного сайта">
       </a>
-    </figure>
+    </figure>-->
     <input type="radio" class="button-slide">
     <input type="radio" class="button-slide">
     <input type="radio" class="button-slide">
@@ -65,6 +65,7 @@
 
   <section class="products">
     <h2>Виды выполняемых работ</h2>
+    <div class="products-ul">
     <ul class="products-list">
       <li class="products-item">
         <img src="img/illustration-1.svg" width="300" height="146" alt="вэб-сайты">
@@ -86,12 +87,14 @@
         <p>Вы даже не подозреваете,<br>
           насколько вы изумительны!</p>
         <a class="button yellow" href="#">Заказать</a>
-      </li>
+      </li> 
     </ul>
+  </div>
   </section>
 
   <section class="about">
-    <p class="about-main">Мы — маленькая, но гордая<br>
+   <div> 
+     <p class="about-main">Мы — маленькая, но гордая<br>
       дизайн-студия из Краснодара.</p>
     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
       превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -101,6 +104,8 @@
       <li class="orders-item">Мобильных приложений для iOS и Android</li>
       <li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
     </ul>
+    </div>
+    <div>
     <img src="img/nerds-illustration.svg" width="360" height="208">
     <p class="about-variants">с 2004 года Любим точность во всем:</p>
     <ul class="indicators">
@@ -117,9 +122,10 @@
         <p class="indicators-label">Минимальная предоплата</p>
       </li>
     </ul>
+  </div>
   </section>
 
-  <section>
+  <section class="our-clients">
     <h2>Наши клиенты</h2>
     <ul class="clients">
       <li class="clients-item"><a><img src="img/Group 5.png" width="199" height="67.82" alt="htmlacademy.ru"></a></li>
@@ -132,11 +138,13 @@
 
 <footer class="page-footer main-footer">
   
-    <img src="img/map 1.png" width="1440" height="416" alt="Карта">
-    <img src="img/map-marker 1.png" width="231" height="190" alt="Маркер">
-
+  <div> 
+     <img src="img/map 1.png" width="100%" height="416" alt="Карта">
+    </div>
+   <div>
+      <img src="img/map-marker 1.png" width="231" height="190" alt="Маркер">
+    </div>
   <section class="footer-contacts">
-    
     <h2>NЁRDS DESIGN STUDIO</h2>
     <p>191186, Санкт-Петербург,<br>
       ул. Б. Конюшенная, д. 19/8<br>
@@ -146,16 +154,26 @@
   </section>
 
   <section class="footer-social">
-    <h2>Социальные сети</h2>
     <ul class="footer-ul">
-      <li class="social-button"><a href="#"><img src="img/vk-icon.png" width="26.01" height="15" alt="Вконтакте"><img src="img/Shape.png" width="81" height="81">Вконтакте</a></li>
-      <li class="social-button"><a href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук"><img src="img/Shape.png" width="81" height="81">Фейсбук</a></li>
-      <li class="social-button"><a href="#" ><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм"><img src="img/Shape.png" width="81" height="81">Инстаграм</a></li>
+      <li class="social-button">
+        <a href="#"><img src="img/vk-icon.png" width="26.01" height="15" alt="Вконтакте">
+          <img src="img/Shape.png" width="81" height="81" alt="Вконтакте">Вконтакте</a>
+        </li>
+      <li class="social-button">
+        <a href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук">
+          <img src="img/Shape.png" width="81" height="81" alt="Фейсбук">Фейсбук</a>
+        </li>
+      <li class="social-button">
+        <a href="#" ><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм">
+          <img src="img/Shape.png" width="81" height="81" alt="Инстаграм">Инстаграм</a>
+        </li>
     </ul>
+    <div> <p class="slogon">Давайте дружить, это выгодно!</p>
+  <p>Скидка 10% для друзей из социальных сетей.</p>
+</div>
   </section>
 
-  <p class="slogon">Давайте дружить, это выгодно!</p>
-  <p>Скидка 10% для друзей из социальных сетей.</p>
+ 
 
 </footer >
  
