@@ -1,157 +1,184 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-<header>
-  <nav>
-    <a>
-      <img src="img/index-logo.svg" width="159.87" height="65.02" alt="Логотип Нёрдс">
-    </a>
-    <ul>
-      <li><a href="studia.html">Студия</a></li>
-      <li><a href="klients.html">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <a href="korzina.html">Корзина</a>
-  </nav>
-</header>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/nerds-logo.png" width="159.87" height="65.02" alt="Логотип Нёрдс">
+        </a>
+       
+          <ul class="site-nav">
+          <li><a href="studia.html">Студия</a></li>
+          <li><a href="klients.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <a class="basket-link" href="basket.html">Корзина</a>
+       
+      </nav>
+    </header>
 
-<main>
-  <h1>Магазин готовых шаблонов</h1>
+<main class="container">
+  <section class="gallery-container-top">
+    <h1>Готовые шаблоны</h1>
+  <section class="gallery">
+    <figure class="catalog-title">
+      <p>Магазин готовых шаблонов</p>
+    </figure>
+  </section>
+</section>
+
+<section class="gallery-container">
+  <section class="page-catalog">
+    <section class="filter">
+        <h2>Фильтр шаблонов</h2>
+        <p>Стоимость:</p>
+        <div>
+          <label for="price"></label>
+          <input type="range" id="price" name="price" min="1" max="" step="1">
+        </div>
+        <div>
+          от <output name="price-max">0</output>
+          до <output name="price-max">15000</output>
+        </div>
+        <p>Сетка:</p>
+          <label><input type="radio" checked>Адаптивная</label>
+          <label><input type="radio">Фиксированная</label>
+          <label><input type="radio">Резиновая</label>
+        <p>Особенности:</p>
+        <label><input type="checkbox" checked>Слайдер</label>
+        <label><input type="checkbox">Блок преимуществ</label>
+        <label><input type="checkbox" checked>Новости</label>
+        <label><input type="checkbox">Галерея</label>
+        <label><input type="checkbox">Корзина</label>
   
-  <section>
-      <h2>Фильтр шаблонов</h2>
-      <p>Стоимость:</p>
-      <div>
-        <label for="price"></label>
-        <input type="range" id="price" name="price" min="1" max="" step="1">
-      </div>
-      <div>
-        от <output name="price-max">0</output>
-        до <output name="price-max">15000</output>
-      </div>
-      <p>Сетка:</p>
-        <label><input type="radio" checked>Адаптивная</label>
-        <label><input type="radio">Фиксированная</label>
-        <label><input type="radio">Резиновая</label>
-      <p>Особенности:</p>
-      <label><input type="checkbox" checked>Слайдер</label>
-      <label><input type="checkbox">Блок преимуществ</label>
-      <label><input type="checkbox" checked>Новости</label>
-      <label><input type="checkbox">Галерея</label>
-      <label><input type="checkbox">Корзина</label>
-
+    </section>
+    <section class="catalog">
+      <div class="sort">
+      <h2>Список шаблонов</h2>
+      <p>Сортировать:</p>
+          <label><input type="radio" checked>ПО ЦЕНЕ</label>
+          <label><input type="radio">ПО ТИПУ</label>
+          <label><input type="radio">ПО НАЗВАНИЮ</label>
+  
+          <label><input type="radio" checked>ПО ВОЗРАСТАНИЮ</label>
+          <label><input type="radio">ПО УБЫВАНИЮ</label>
+          <div>
+            <div >
+      <ul class="template">
+          <li><a href="">
+              <p>
+                <img src="img/img-sedona 1.png" width="358" height="576" alt="Sedona">
+              </p>
+            </a>
+            <p>
+              SEDONA</p>
+              <p>Информационный сайт<br>для туристов
+              <button type="button">9 900 ₽</button>
+            </p>
+          </li>
+          <li><a href="">
+              <p>
+                <img src="img/img-pink 1.png" width="358" height="576" alt="Pink">
+              </p>
+            </a>
+          </li>
+          <li><a href="">
+              <p>
+                <img src="img/img-barbershop 1.png" width="358" height="576" alt="Barbershop">
+              </p>
+            </a>
+          </li>
+          <li><a href="">
+              <p>
+                <img src="img/img-mishka 1.png" width="358" height="576" alt="Mishka">
+              </p>
+            </a>
+          </li>
+          <li><a href="">
+              <p>
+                <img src="img/img-aplus 1.png" width="358" height="576" alt="Aplus">
+              </p>
+            </a>
+          </li>
+          <li><a href="">
+              <p>
+                <img src="img/img-kvast 1.png" width="358" height="576" alt="Kvast">
+              </p>
+            </a>
+          </li>
+      </ul>
+  
+      <ul class="number-page">
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
+  
+    </section>
+    
+  </section>
   </section>
 
-  <section>
-    <h2>Список шаблонов</h2>
-    <p>Сортировать:</p>
-        <label><input type="radio" checked>ПО ЦЕНЕ</label>
-        <label><input type="radio">ПО ТИПУ</label>
-        <label><input type="radio">ПО НАЗВАНИЮ</label>
-
-        <label><input type="radio" checked>ПО ВОЗРАСТАНИЮ</label>
-        <label><input type="radio">ПО УБЫВАНИЮ</label>
-
-    <ul>
-        <li><a href="">
-            <h3>Sedona</h3>
-            <p>
-              <img src="img/img-sedona.jpg" width="358" height="576" alt="Sedona">
-            </p>
-          </a>
-          <p>
-            SEDONA</p>
-            <p>Информационный сайт<br>для туристов
-            <button type="button">9 900 ₽</button>
-          </p>
-        </li>
-        <li><a href="">
-            <h3>Pink</h3>
-            <p>
-              <img src="img/img-pink.png" width="358" height="576" alt="Pink">
-            </p>
-          </a>
-        </li>
-        <li><a href="">
-            <h3>Barbershop</h3>
-            <p>
-              <img src="img/img-barbershop.jpg" width="358" height="576" alt="Barbershop">
-            </p>
-          </a>
-        </li>
-        <li><a href="">
-            <h3>Mishka</h3>
-            <p>
-              <img src="img/img-mishka.jpg" width="358" height="576" alt="Mishka">
-            </p>
-          </a>
-        </li>
-        <li><a href="">
-            <h3>Aplus</h3>
-            <p>
-              <img src="img/img-aplus.jpg" width="358" height="576" alt="Aplus">
-            </p>
-          </a>
-        </li>
-        <li><a href="">
-            <h3>Kvast</h3>
-            <p>
-              <img src="img/img-kvast.jpg" width="358" height="576" alt="Kvast">
-            </p>
-          </a>
-        </li>
-    </ul>
-
-    <ul>
-        <li>
-          <a>1</a>
-        </li>
-        <li>
-          <a href="#">2</a>
-        </li>
-        <li>
-          <a href="#">3</a>
-        </li>
-        <li>
-          <a href="#">Следующая</a>
-        </li>
-      </ul>
-
-</section>
 </main>
 
-<footer>
-  
-    <img src="img/map.jpg" width="1440" height="416" alt="Карта">
 
-  <section>
-    <h2>Адрес и телефон</h2>
-    <p>NЁRDS DESIGN STUDIO</p>
+<footer class="page-footer main-footer">
+  
+  <div> 
+     <img src="img/map 1.png" width="100%" height="416" alt="Карта">
+    </div>
+   <div>
+      <img src="img/map-marker 1.png" width="231" height="190" alt="Маркер">
+    </div>
+  <section class="footer-contacts">
+    <h2>NЁRDS DESIGN STUDIO</h2>
     <p>191186, Санкт-Петербург,<br>
       ул. Б. Конюшенная, д. 19/8<br>
       <br>
       тел. +7 (812) 275-75-75</p>
-      <a href="massage.html">Напишите нам</a>
+      <a class="button red" href="#">Напишите нам</a>
   </section>
 
-  <section>
-    <h2>Социальные сети</h2>
-    <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+  <section class="footer-social">
+    <ul class="footer-ul">
+      <li class="social-button">
+        <a href="#"><img src="img/vk-icon.png" width="26.01" height="15" alt="Вконтакте">
+          <img src="img/Shape.png" width="81" height="81" alt="Вконтакте">Вконтакте</a>
+        </li>
+      <li class="social-button">
+        <a href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук">
+          <img src="img/Shape.png" width="81" height="81" alt="Фейсбук">Фейсбук</a>
+        </li>
+      <li class="social-button">
+        <a href="#" ><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм">
+          <img src="img/Shape.png" width="81" height="81" alt="Инстаграм">Инстаграм</a>
+        </li>
     </ul>
+    <div> <p class="slogon">Давайте дружить, это выгодно!</p>
+  <p>Скидка 10% для друзей из социальных сетей.</p>
+</div>
   </section>
 
-  <p>Давайте дружить, это выгодно!</p>
-  <p>Скидка 10% для друзей из социальных сетей.</p>
+ 
 
-</footer>
+</footer >
 
   </body>
 </html>
