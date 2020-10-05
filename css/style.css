@@ -40,6 +40,10 @@
         height: 100%;
     }
 
+    .line {
+        border-bottom: 2px solid var(--gray-header);
+    }
+
     .page a {
         text-decoration: none;
         color: var(--color-text);
@@ -175,10 +179,14 @@
 
     .our-clients .clients {
         margin: 0;
-        padding: 0;
+        padding: 45px 30px;
         list-style: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid var(--gray-header);
+        border-bottom: 2px solid var(--gray-header);
     }
 
     .our-clients {
