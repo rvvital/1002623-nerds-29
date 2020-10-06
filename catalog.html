@@ -11,17 +11,17 @@
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.png" width="159.87" height="65.02" alt="Логотип Нёрдс">
-        </a>
-       
-          <ul class="site-nav">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+         </a>
+         <ul class="site-nav">
           <li><a href="studia.html">Студия</a></li>
           <li><a href="klients.html">Клиенты</a></li>
           <li class="active-page"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+       </ul>
+       <div class="basket">
         <a class="basket-link" href="basket.html">Корзина</a>
-       
+       </div>   
       </nav>
     </header>
 
@@ -39,22 +39,96 @@
   <section class="page-catalog">
     <section class="filter">
         <h2>Фильтр шаблонов</h2>
-        <p>Стоимость:</p>
-        <div>
-          <label for="price"></label>
-          <input type="range" id="price" name="price" min="1" max="" step="1">
-        </div>
-        <div>
-          от <output name="price-max">0</output>
-          до <output name="price-max">15000</output>
-        </div>
-        <p>Сетка:</p>
-        <div class="radio">
-          <label><input type="radio" checked>Адаптивная</label>
+
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                      width: 30%;
+                      margin-left: 20%
+                    "></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="
+                    left: 20%
+                  "></div>
+                  <div class="toggle toggle-max" tabindex="0" style="
+                    left: 50%
+                  "></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+
+            <fieldset class="filter-item">
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+                  <label for="filter-baxter-of-california">Baxter of California</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="mr-natty" id="filter-mr-natty">
+                  <label for="filter-mr-natty">Mr Natty</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="suavecito" id="filter-suavecito" checked>
+                  <label for="filter-suavecito">Suavecito</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+                  <label for="filter-malin-goetz">Malin+Goetz</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="murrays" id="filter-murrays">
+                  <label for="filter-murrays">Murray’s</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="american-crew" id="filter-american-crew" checked>
+                  <label for="filter-american-crew">American Crew</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter-item">
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="shaving" id="filter-shave">
+                  <label for="filter-shave">Бритвенные принадлежности</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="hair-care" id="filter-care" checked>
+                  <label for="filter-care">Средства для ухода</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="accessories" id="filter-accessories">
+                  <label for="filter-accessories">Аксессуары</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="filter-button button">Показать</button>
+         
+      
+<!--           <legend>Сетка:</legend>
+        <ul class="radio">
+         <li> 
+           <label><input type="radio" checked>Адаптивная</label>
+         </li>
           <label><input type="radio">Фиксированная</label>
           <label><input type="radio">Резиновая</label>
-        </div>
-        <p>Особенности:</p>
+        </ul>
+        <legend>Особенности:</legend>
         <div class="checkbox">
         <label><input type="checkbox" checked>Слайдер</label>
         <label><input type="checkbox">Блок преимуществ</label>
@@ -62,6 +136,19 @@
         <label><input type="checkbox">Галерея</label>
         <label><input type="checkbox">Корзина</label>
         <div>
+ -->       
+        </form>
+
+       <!--  <p>Стоимость:</p>
+        <div>
+          <label for="price"></label>
+          <input type="range" id="price" name="price" min="1" max="" step="1">
+        </div>
+        <div>
+          от <output name="price-max">0</output>
+          до <output name="price-max">15000</output>
+        </div> -->
+       
   
     </section>
     <section class="catalog">
