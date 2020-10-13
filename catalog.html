@@ -14,10 +14,10 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
          </a>
          <ul class="site-nav">
-          <li><a href="studia.html">Студия</a></li>
-          <li><a href="klients.html">Клиенты</a></li>
+          <li><a  href="studia.html">Студия</a></li>
+          <li><a  href="klients.html">Клиенты</a></li>
           <li class="active-page"><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a  href="contacts.html">Контакты</a></li>
        </ul>
        <div class="basket">
         <a class="basket-link" href="basket.html">Корзина</a>
@@ -26,37 +26,29 @@
     </header>
 
 <main class="container">
-  <section class="gallery-container-top">
-    <h1>Готовые шаблоны</h1>
-  <section class="gallery">
-    <figure class="catalog-title">
-      <p>Магазин готовых шаблонов</p>
-    </figure>
-  </section>
+   <section class="gallery-container-top">
+    <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
+    <p>Магазин готовых шаблонов</p>
+ 
 </section>
 
 <section class="gallery-container">
   <section class="page-catalog">
     <section class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-
-        <form method="get">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter-item">
             <legend>Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="
-                    width: 30%;
-                    margin-left: 20%
-                  "></div>
+                  <div class="bar" >
+                  </div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style="
-                  left: 20%
-                "></div>
-                <div class="toggle toggle-max" tabindex="0" style="
-                  left: 50%
-                "></div>
+                <div class="toggle toggle-min" tabindex="0" >
+                </div>
+                <div class="toggle toggle-max" tabindex="15000">
+                </div>
               </div>
               <div class="price-controls">
                 <label class="min-price">
@@ -70,14 +62,14 @@
         </fieldset>
 
             <fieldset class="filter-item">
-              <legend>Особенности:</legend>
+              <legend class="grid">Сетка:</legend>
               <ul>
                 <li class="filter-option filter-radio">
-                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="group" value="adaptive" id="filter-adaptive">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="group" value="adaptive" id="filter-adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option filter-radio">
-                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="group" value="fix" id="filter-fix" checked>
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="group" value="fix" id="filter-fix" >
                   <label for="filter-fix">Фиксированная</label>
                 </li>
                 <li class="filter-option filter-radio">
@@ -90,7 +82,7 @@
            
          
 <fieldset class="filter-item"> 
-              <legend>Сетка:</legend>
+              <legend class="grid">Особенности:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-slider" checked>
@@ -151,47 +143,79 @@
         </div>
         </div >
       <ul class="template">
-          <li >
-            <a class="browser" href="">
-                <img  class="header-browser browser-active" src="img/browser.svg">
-                <img class="shadow-in" src="img/Mask-Group.svg" width="360" height="576" alt="Sedona"> 
-            </a>
-            <p>
-              SEDONA</p>
-              <p>Информационный сайт<br>для туристов
-              <button type="button">9 900 ₽</button>
-            </p>
-          </li>
-          <li>
-            <a class="browser" href="">
-              <img class="header-browser" src="img/browser.svg">
-                <img class="shadow-in" src="img/img-pink 1.png" width="360" height="576" alt="Pink">
-            </a>
-          </li>
-          <li>
-            <a class="browser" href="">
-                <img class="header-browser" src="img/browser.svg">
-                <img  class="shadow-in"src="img/img-barbershop 1.png" width="360" height="576" alt="Barbershop">
-            </a>
-          </li>
-          <li>
-            <a class="browser" href="">
-                <img class="header-browser" src="img/browser.svg">
-                <img class="shadow-in" src="img/img-mishka 1.png" width="360" height="576" alt="Mishka">
-            </a>
-          </li>
-          <li>
-            <a class="browser" href="">
-                <img class="header-browser" src="img/browser.svg">
-                <img class="shadow-in" src="img/img-aplus 1.png" width="360" height="576" alt="Aplus">
-            </a>
-          </li>
-          <li>
-            <a class="browser" href="">
-                <img class="header-browser" src="img/browser.svg">
-                <img  class="shadow-in"src="img/img-kvast 1.png" width="360" height="576" alt="Kvast">
-            </a>
-          </li>
+        <li class="li-test">
+          <div class="browser-test" href="">
+          <img class="shadow-in-test" src="img/img-sedona 1.jpg" width="360" height="576" alt="Sedona">
+        </div>
+          <div class="pop-up">
+            <h3>SEDONA</h3>
+              <p>Информационный сайт<br>для туристов</p>
+              <button class="button red" type="button">9 900 ₽</button>
+            
+          </div>
+        </li>
+
+        <li class="li-test">
+          <div class="browser-test" href="">
+          <img class="shadow-in-test" src="img/img-pink 1.jpg" width="360" height="576" alt="PINK APP">
+        </div>
+          <div class="pop-up">
+            <h3>PINK APP</h3>
+              <p>Продуктовый лендинг<br>Приложения дл iOS и Android</p>
+              <button class="button red" type="button">9 900 ₽</button>
+            
+          </div>
+        </li>
+
+        <li class="li-test">
+          <div class="browser-test" href="">
+          <img class="shadow-in-test" src="img/img-barbershop 1.jpg" width="360" height="576" alt="barbershop">
+        </div>
+          <div class="pop-up">
+            <h3>barbershop</h3>
+              <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+              <button class="button red" type="button">9 900 ₽</button>
+            
+          </div>
+        </li>
+
+        <li class="li-test">
+          <div class="browser-test" href="">
+          <img class="shadow-in-test" src="img/img-mishka 1.jpg" width="360" height="576" alt="Mishka">
+        </div>
+          <div class="pop-up">
+            <h3>Mishka</h3>
+              <p>Интернет-магазин<br>вязанных игрушек</p>
+              <button class="button red" type="button">9 900 ₽</button>
+            
+          </div>
+        </li>
+
+        <li class="li-test">
+          <div class="browser-test" href="">
+          <img class="shadow-in-test" src="img/img-aplus 1.jpg" width="360" height="576" alt="aplus">
+        </div>
+          <div class="pop-up">
+            <h3>aplus</h3>
+              <p>Лендинг курсов повышения<br>квалификации</p>
+              <button class="button red" type="button">9 900 ₽</button>
+            
+          </div>
+        </li>
+
+        <li class="li-test">
+          <div class="browser-test" href="">
+          <img class="shadow-in-test" src="img/img-kvast 1.jpg" width="360" height="576" alt="kvast">
+        </div>
+          <div class="pop-up">
+            <h3>kvast</h3>
+              <p>Промо-сайт производителя<br>крафтового кваса</p>
+              <button class="button red" type="button">9 900 ₽</button>
+            
+          </div>
+        </li>
+       
+         
       </ul>
   
       <ul class="pagination-list">
@@ -217,21 +241,23 @@
 <footer class="page-footer main-footer">
   
   <div class="map-wrapper">
-    
-    <img src="img/map 1.png" width="1180" height="416" alt="Расположение дизайн-студии на карте">
-    <div class="qwe">
-    <section class="map-container wrapper-content">
+<!--     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1602277279362!5m2!1sru!2sby" width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+ -->
+<!--      <img src="img/map 1.png" width="100%" height="416" alt="Расположение дизайн-студии на карте">
+ -->   <!--  <div class="contact-map"> -->
+    <section class="map-container">
       <h2 class="visually-hidden">Наши контактные данные</h2>
       <div class="map-address">
         <b>NЁRDS DESIGN STUDIO</b>
         <div class="address">
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
           <p class="address-phone">тел. +7 (812) 275-75-75</p>
         </div>
-        <a href="#" class="button red writeus-button send-us-form-button send-us-popup-button">Напишите нам</a>
+        <a href="#" class="button red writeus-button">Напишите нам</a>
       </div>
     </section>
-  </div>
+  <!-- </div> -->
+  
   </div>
 
   <section class="footer-social">
@@ -259,14 +285,11 @@
         </a>
          </li>
     </ul>
-    <div>
+    <div class="footer-slogon">
        <p class="slogon">Давайте дружить, это выгодно!</p>
   <p>Скидка 10% для друзей из социальных сетей.</p>
 </div>
   </section>
-
- 
-
 </footer >
   </body>
 </html>
