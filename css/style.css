@@ -83,6 +83,7 @@
     .main-header {
         background-color: var(--gray-header); 
         height: 114px;
+        z-index: 1;  
     }
 
     .container {
@@ -102,19 +103,20 @@
         justify-content: space-between;
         align-items: flex-end;
      
-        margin-bottom: 19px;
+        margin-bottom: 1px;
         padding: 0;
       
         list-style: none;
         min-height: 30px;
     }
 
-    .site-nav a {
+    .site-nav li {
       display: block;
-   
+  padding: 0px 0px 12px 0px;
+ border-bottom: 2px solid rgba(0, 0, 0, 0); 
+  margin-bottom: 3px;
      
     }
-
 
     .main-nav {
         display: grid;
@@ -155,10 +157,10 @@
         background-position: 0 0;
       }
 
-      .active-page {
-        
+      li.active-page {
+  
         border-bottom: 2px solid var(--site-nav-hover);
-    }
+    } 
 
     /*  .container h1, 
     .container h2 {
@@ -174,19 +176,17 @@
     }
 .gallery-container-top {
     
-    
+  
 font-weight: 500;
 font-size: 55px;
 line-height: 55px;
     text-align: center;
     background-color: var(--gray-header);
 
-    padding-right: 20px;
+  /*   padding-right: 0px; */
     padding-top: 23px;
     padding-bottom: 52px;
-    margin-bottom: 55px;
-  
-    
+    margin-bottom: 55px;    
 }
 
     .gallery-content,
@@ -922,8 +922,8 @@ line-height: 55px;
   text-align: center;
   border: none;
   border-radius: 3px;
-  width: 250px;
-    height: 60px;
+  width: 260px;
+    height: 50px;
     outline: none;
 }
 
@@ -1372,6 +1372,8 @@ outline: none;
     line-height: 55px;
     margin-top: 78px;
     margin-bottom: 25px;
+   
+ 
   }
 
   .slide-text {
@@ -1676,23 +1678,49 @@ outline: none;
 
 
    /*POP-UP*/ /*POP-UP*/ /*POP-UP*/
-   .pop-up {
+    .pop-up {
      display: none;
-   }
+   } 
 
 
     .li-test:hover .pop-up{
       display: block;
-    position: absolute;
-    top: 392px;
-    left: 0px;
+
+      position: absolute;
+   
+    bottom: 0;
+
+    overflow-y: auto;
+
     width: 360px;
-    height: 220px;
-    padding: 0;
+    max-height: 550px;
+    padding-top: 1px;
+    padding-bottom: 44px;
+
     text-align: center;
-    padding-top: 6px;
-    background: rgba(238, 238, 238, 1);
-  }
+
+    
+    color: #666;
+    background-color: #eee;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+     /*  position: absolute;
+      bottom: 0;
+
+      overflow-y: auto;
+      top: 392px;
+      left: 0px;
+      width: 360px;
+      
+      max-height: 520px;
+      padding: 0;
+      text-align: center;
+      padding-top: 6px;
+      background: rgba(238, 238, 238, 1); 
+      */
+  } 
 
   .li-test:hover .pop-up h3{
     font-size: 18px;
