@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -129,32 +129,21 @@
         <section class="catalog">
           <div class="sort">
             <h2 class="visually-hidden">Список шаблонов</h2>
+
             <div><span>Сортировать:</span></div>
             <div class="param-sort">
-              <ul class="param">
-                <li>
-                  <input class=" sort-value visually-hidden" type="radio" checked>
-                  <label class="">По цене</label>
-                </li>
 
-                <li> <input class=" sort-value visually-hidden" type="radio">
-                  <label class="">По типу</label>
-                </li>
+              <div class="sort-param">
+                <a class="sort-value sort-value-checked" href="#">По цене</a>
+                <a class="sort-value" href="#">По типу</a>
+                <a class="sort-value" href="#"> По названию</a>
+              </div>
 
-                <li> <input class=" sort-value visually-hidden" type="radio">
-                  <label class="">По названию</label>
-                </li>
-              </ul>
-              <ul class="up_down">
-                <li class="down">
-                  <input class="up_down_radio visually-hidden" type="radio" checked>
-                  <label class=""></label>
-                </li>
-                <li class="up">
-                  <input class="up_down_radio visually-hidden" type="radio">
-                  <label class=""></label>
-                </li>
-              </ul>
+              <div class="up-down">
+                <a class="sort-up-down sort-up-down-active" href="#"><img class="sort-up" src="img/icon-sort.svg"></a>
+                <a class="sort-up-down" href="#"><img class="sort-down" src="img/icon-sort.svg"></a>
+              </div>
+
             </div>
           </div>
           <ul class="template">

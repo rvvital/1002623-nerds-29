@@ -987,7 +987,7 @@ input[type=number] {
 .param-sort {
   padding-top: 3px;
   display: grid;
-  grid-template-columns: 318px 40px;
+  grid-template-columns: 313px 45px;
 }
 
 .param {
@@ -1001,7 +1001,7 @@ input[type=number] {
   text-align: right;
 }
 
-.sort-value+label {
+/* .sort-value+label {
   font-size: 14px;
   line-height: 18px;
   opacity: 0.3;
@@ -1014,7 +1014,7 @@ input[type=number] {
 
 .sort-value+label:active, .sort-value:checked+label {
   opacity: 1;
-}
+} */
 
 .down label, .up label {
   position: relative;
@@ -1645,4 +1645,48 @@ input:invalid {
   padding-right: 73px;
   color: white;
   font-weight: 500;
+}
+
+/*SORT*/
+
+.sort-value {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0);
+  opacity: 0.3;
+  margin-right: 20px;
+}
+
+.sort-param:last-child {
+  margin-right: 0px;
+}
+
+.sort-value:hover {
+  opacity: 0.6;
+}
+
+.sort-value:active, .sort-value-checked {
+  opacity: 1;
+  color: #000000;
+}
+
+.sort-down {
+  transform: rotate(180deg);
+  margin-left: 15px;
+}
+
+.sort-up-down {
+  opacity: 0.3;
+}
+
+.sort-up-down:hover {
+  opacity: 0.6;
+}
+
+.sort-up-down:active, .sort-up-down-active {
+  opacity: 1;
+}
+
+.up-down {
+  text-align: right;
 }
